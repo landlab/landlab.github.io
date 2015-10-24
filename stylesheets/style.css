@@ -63,7 +63,8 @@ header .white {
 .tag {
   font-size: 2.1vw;
   position: relative;
-  top: 12.6vw; }
+  top: 12.6vw;
+  margin-left: 20.5vw; }
 
 img {
   float: left; }
