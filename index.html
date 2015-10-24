@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="landlab">
+<head>
+  <meta charset="UTF-8">
+  <title>Landlab Toolkit</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+  <header class="background">
+    <div class="white">
+      <img class="logo" src="../assets/Landlab-logo.png" alt="Landlab logo">
+      <div class="htext">
+        <h2 class="tag">a python toolkit for modeling surface processes with grids</h2>
+        <nav>
+          <div><a href="http://landlab.readthedocs.org/en/latest/what_is_landlab.html">About</a></div>
+          <div><a href="http://landlab.readthedocs.org/en/latest/getting_started.html">Examples</a></div>
+          <div><a href="http://landlab.readthedocs.org/en/latest/#user-guide">User Guide</a></div>
+          <div><a href="http://landlab.readthedocs.org/en/latest/#developer-documentation">Developer API</a></div>
+          <div><a href="http://landlab.readthedocs.org/en/latest/faq.html">FAQs</a></div>
+          <div><a href="http://landlab.readthedocs.org/en/latest/#tutorials">Tutorials</a></div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div ng-view></div>
+
+<script src="scripts/angular/angular.js"></script>
+<script src="scripts/angular/angular-route.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers.js"></script>
+<script src="scripts/routes.js"></script>
+<script src="scripts/services.js"></script>
+<script src="scripts/filters.js"></script>
+<script src="scripts/directives.js"></script>
+
+</body>
+</html>
