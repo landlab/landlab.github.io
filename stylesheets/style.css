@@ -49,12 +49,18 @@ table {
 *, *:before, *:after {
   box-sizing: border-box; }
 
-body {
+html {
   background: url(../assets/LandlabClarence.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  height: 100%;
+  overflow: auto; }
 
 header .white {
   height: 24vw;
