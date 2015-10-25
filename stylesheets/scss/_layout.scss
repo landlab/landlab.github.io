@@ -2,13 +2,20 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   // width: 100vw;
   background: url(../assets/LandlabClarence.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height:100%;
+  overflow: auto;
 }
 
 header {
