@@ -58,7 +58,7 @@ body {
 
 header .white {
   height: 24vw;
-  padding: 1em; }
+  padding: 1.6vw; }
 
 .tag {
   font-size: 2.1vw;
@@ -85,17 +85,36 @@ nav {
     margin: 0 0.09vw; }
     nav div a {
       font-size: 1.32vw;
-      margin: 1.3em; }
+      margin: 1.3vw; }
+
+@media screen and (max-width: 850px) {
+  nav {
+    top: -4vw;
+    line-height: 4.5vh; }
+    nav div {
+      margin: 0; }
+      nav div a {
+        font-size: 2vw; }
+  header .white {
+    height: 24vw;
+    padding-top: .8vw; }
+  .tag {
+    font-size: 3vw; } }
 
 .background {
   margin-top: 10vmin;
   background-color: rgba(246, 247, 196, 0.5);
-  padding: 1em 5.5em; }
+  padding: 1vw 6vw; }
 
 .white {
   position: relative;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 3.5em; }
+  padding: 3.5vw; }
+
+@media screen and (max-width: 850px) {
+  .background {
+    margin-top: 5vmin;
+    padding: .8vw; } }
 
 html {
   font-size: 1.2em; }

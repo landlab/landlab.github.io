@@ -14,7 +14,7 @@ body {
 header {
   .white {
     height: 24vw;
-    padding: 1em;
+    padding: 1.6vw;
   }
 }
 
@@ -47,7 +47,29 @@ nav {
     margin: 0 .09vw;
     a {
       font-size: 1.32vw;
-      margin: 1.3em;
+      margin: 1.3vw;
     }
+  }
+}
+
+@media screen and (max-width: $break-large) {
+  nav {
+    top: -4vw;
+    line-height: 4.5vh;
+    div {
+      margin: 0;
+      a {
+        font-size: 2vw;
+      }
+    }
+  }
+  header {
+    .white {
+      height: 24vw;
+      padding-top: .8vw;
+    }
+  }
+  .tag {
+    font-size: 3vw;
   }
 }
