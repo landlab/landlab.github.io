@@ -1,6 +1,7 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
+
 body {
   // width: 100vw;
   background: url(../assets/LandlabClarence.jpg) no-repeat center center fixed;
@@ -9,6 +10,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
 header {
   .white {
     height: 24vw;
@@ -26,6 +28,7 @@ header {
 img {
   float: left;
 }
+
 img:after {
   clear: both;
 }
