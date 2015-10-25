@@ -90,9 +90,9 @@ nav {
 @media screen and (max-width: 850px) {
   nav {
     top: -4vw;
-    line-height: 4.5vh; }
+    line-height: 4.5vw; }
     nav div {
-      margin: 0; }
+      margin: .32vw; }
       nav div a {
         font-size: 2vw; }
   header .white {

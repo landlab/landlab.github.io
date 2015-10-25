@@ -55,9 +55,9 @@ nav {
 @media screen and (max-width: $break-large) {
   nav {
     top: -4vw;
-    line-height: 4.5vh;
+    line-height: 4.5vw;
     div {
-      margin: 0;
+      margin: .32vw;
       a {
         font-size: 2vw;
       }
