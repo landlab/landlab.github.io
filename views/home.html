@@ -45,19 +45,41 @@
           <li>SciPy 0.14 or greater</li>
           <li>netCDF4 (will run without, but recommended)</li>
           <li>Cython (only required if building Landlab from source code)</li>
-          <li>an up-to-date Python package manager (such as pip)</li>
+          <li>an up-to-date Python package manager (such as PyPI, aka "pip")</li>
     </p>
 
     <p> To fulfill these requirements we recommend a preassembled scientific Python
     distribution such as <a href="https://www.continuum.io/downloads">Continuum
     IO’s Anaconda.</a> Follow this link for instructions on <a href="https://github.com/landlab/landlab/wiki/Installing-Python">installing your Python distribution.</a></p>
-
     <p>
-      If your Python distribution is complete and up to date, especially <code>setuptools,</code> open a terminal (or the command prompt) and type the following:
+      To ensure your Python distribution is complete and up to date, especially <code>setuptools,</code> open a terminal (or the command prompt) and type the following:
+    </p>
+    <p>
+      <code>
+        > conda update --all
+      </code>
+    </p>
+    <p>
+      <code>
+        > conda update setuptools
+      </code>
+    </p>
+    <p>
+      <code>> pip install --upgrade pip</code>
     </p>
 
     <p>
-      <code>> pip install --upgrade pip</code>
+      Then install <code>netCDF4</code>:
+    </p>
+
+    <p>
+      <code>
+        > conda install netCDF4
+      </code>
+    </p>
+
+    <p>
+      Once your Python distribution is complete and up to date, install Landlab:
     </p>
     <p>
       <code>> pip install landlab</code>
