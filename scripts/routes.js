@@ -8,6 +8,9 @@ app.config(function($routeProvider) {
         templateUrl: 'views/home.html',
         controller: 'HomeController'
     })
+    .when('/#install', {
+        redirectTo: '/#/#install'
+    })
     .when('/styleguide', {
         templateUrl: 'views/styleguide.html'
     })
