@@ -68,25 +68,44 @@
 
    <h3>Installing Landlab Using Anaconda</h3>
    <p>
-     Open a terminal (or, on a PC, the command prompt—make sure it is a true DOS "cmd" prompt, not, e.g., Cygwin) and type the following:
+     We recommend running Landlab inside its own conda environment. This keeps it from interfering with any other Python software you may have on your machine.
    </p>
    <p>
-     <code>> conda install landlab -c landlab -c conda-forge</code>
+     To do this, open a terminal (or, on a PC, the command prompt—make sure it is a true DOS "cmd" prompt, not, e.g., Cygwin) and type the following:
    </p>
-
+   <p>
+     <code>> conda create -n landlab_env landlab -c conda-forge</code>
+   </p>
+   <p>
+     You can now activate this environment and use Landlab inside it. Do this with:
+   </p>
+   <p>
+     <code>> conda activate landlab_env</code>
+   </p>
+   <p>
+     And proceed to use Landlab. When you're done, close up your environment with:
+   </p>
+   <p>
+     <code>> conda deactivate</code>
+   </p>
+   <p>
+     There are also two install options we don't formally recommend. You can still install Landlab directly without an environment using
+     <code>conda install landlab -c conda-forge</code>,
+     and there is also an up-to-date <code>pip</code> distribution for users who would prefer that.
+   </p>
    <p>
      If you would like more <a href="https://github.com/landlab/landlab/wiki/Installing-Landlab-with-Anaconda">detailed instructions</a> for installing Landlab with Anaconda's Python distribution,
      follow <a href="https://github.com/landlab/landlab/wiki/Installing-Landlab-with-Anaconda">this link</a>.
    </p>
 
-    <h3>
-      Developer Installation—installing from Landlab source code
-    </h3>
-    <p>
-      For users who have gotten a feel for Landlab and want to
-      keep up with the absolute latest Landlab developments and contribute code back to the Landlab repository,
-      <a href="https://github.com/landlab/landlab/wiki/Installing-Landlab-from-source-code-(%22developer-install%22)">follow these directions</a>.
-    </p>
+   <h3>
+     Developer Installation—Installing from Landlab Source Code
+   </h3>
+   <p>
+     For users who have gotten a feel for Landlab and want to
+     keep up with the absolute latest Landlab developments and contribute code back to the Landlab repository,
+     <a href="https://github.com/landlab/landlab/wiki/Installing-Landlab-from-source-code-(%22developer-install%22)">follow these directions</a>.
+   </p>
   </div>
 </div>
 
@@ -105,21 +124,27 @@
       Whenever you update Landlab, we strongly recommend you <strong>also update your
       Python package!</strong> For Anaconda, use the conda package manager from a command
       prompt.
+      Assuming you have Landlab installed in a conda environment, be sure to activate the environment first.
       [Remember, on a PC, do all this in a Command Prompt window or through Anaconda; do not use Cygwin.]
-      <p>
-        <code>
-          > conda update --all
-        </code>
-      </p>
     </p>
     <p>
-      From Canopy, use the GUI to update all the available new packages listed.
+      <code>
+        > conda update --all
+      </code>
     </p>
-
     <p>
-      If you installed Landlab
-      through the instructions on <a href="https://github.com/landlab/landlab/wiki/Installing-Landlab-with-Anaconda">this page</a>, simply use <code>pip</code>
-      to update, like so:
+      Once you've done this, simply update landlab, once again specifically from the <code>conda-forge</code> conda channel:
+    </p>
+    <p>
+      <code>
+        > conda update landlab -c conda-forge
+      </code>
+    </p>
+    <h3>
+      Older Installations of Landlab
+    </h3>
+    <p>
+      We used to recommend installing landlab outside an environment, using either the <code>pip</code> package manager or through a conda channel called <code>-c landlab</code>. Notably, if you installed through the conda <code>landlab</code> channel rather than <code>conda-forge</code>, you won't be able to access updates any more. If you're now using Landlab inside its own environment, having these older versions around won't matter too much. However, to minimise confusion, you may wish to remove them. Simply do this:
     </p>
     <p>
       <code>
@@ -127,36 +152,16 @@
       </code>
     </p>
     <p>
-      <code>
-        > pip install landlab
-      </code>
-    </p>
-
-    <p>
-      <strong>However, if you are running an Anaconda distribution, we now recommend you uninstall with pip
-      and replace with a conda install. Simply do this:
+      and/or
     </p>
     <p>
       <code>
-        > pip uninstall landlab
+        > conda uninstall landlab
       </code>
     </p>
     <p>
-      <code>
-        > conda install landlab -c landlab -
-      </code>
+      from outside your environment. The Landlab installation inside your environment should be unaffected.
     </p>
-
-    <p>
-      Once you've done this, you will be able to update landlab along with the rest of your conda packages:
-    </p>
-
-    <p>
-      <code>
-        > conda update --all -c landlab
-      </code>
-    </p>
-
     <p>
       If you have <a href="https://github.com/landlab/landlab/wiki/Updating-Landlab" target="_blank">errors during install, click here</a> for guidance on how to resolve them.
     </p>
