@@ -43,18 +43,27 @@
     <a name="install"></a><h2>Installing Landlab</h2>
     <p>
       To install Landlab, you will need a Python distribution that includes
-          <li>Python 2.6+ or 3.5+</li>
+          <li>Python 2.6+ or 3.5+ (NB: support for Python 2 will be dropped in Landlab v.2)</li>
           <li>NumPy 1.9 or greater</li>
           <li>SciPy 0.14 or greater</li>
           <li>netCDF4 (will run without, but recommended)</li>
           <li>Cython (only required if building Landlab from source code)</li>
-          <li>an up-to-date Python package manager (such as PyPI, aka "pip")</li>
+          <li>an up-to-date Python package manager (such as conda or PyPI, aka "pip")</li>
           <li>a compiler that Python can recognise (through the Xcode app on a mac)</li>
     </p>
 
     <p> To fulfill these requirements we recommend a preassembled scientific Python
-    distribution such as <a href="https://www.continuum.io/downloads">Continuum
-    IO’s Anaconda.</a> Follow this link for instructions on <a href="https://github.com/landlab/landlab/wiki/Installing-Python">installing your Python distribution.</a></p>
+    distribution such as <a href="https://www.anaconda.com/distribution/">Continuum
+    IO’s Anaconda.</a> We recommend choosing <strong>Python 3</strong> over
+    Python 2 when offered the choice.
+    As well as the Python package and associated libraries, the Anaconda
+    installer also puts a suite of useful Python tools on your machine, including
+    a graphical interface for coding. However, what we are mostly after is
+    the very powerful command line tool for managing your system Python called
+    <code>conda</code>. This gets installed automatically, and we'll be
+    exploiting it below. (Note that you can also install <code>conda</code>
+    without all the associated tools - AKA "<code>miniconda</code>" - if
+    you want, via other approaches.)</p>
 
     <p>
       Once your Python distribution is complete and up to date, install Landlab.
@@ -62,8 +71,14 @@
 
    <h3>Installation Options</h3>
    <p>
-		 <li>Using Anaconda - installation of a pre-compiled Landlab release - it's quick but you will not be able to access and edit the code</li>
-		 <li>Developer Installation - forking Landlab's github repository - preferred option if you want to modify code and commit back to Landlab</li>
+     You need to choose between two installation options for Landlab at this stage:
+   </p>
+   <p>
+		 <li>Using Anaconda - installation of a pre-compiled Landlab release. It's quick and easy but you will not be able to access and edit the code itself.</li>
+		 <li>Developer Installation - forking Landlab's github repository. This is the preferred option if you want to modify code and commit back to Landlab.</li>
+   </p>
+   <p>
+     We anticipate most users will want to choose an Anaconda install, at least while becoming familiar with Landlab.
    </p>
 
    <h3>Installing Landlab Using Anaconda</h3>
@@ -94,8 +109,7 @@
      and there is also an up-to-date <code>pip</code> distribution for users who would prefer that.
    </p>
    <p>
-     If you would like more <a href="https://github.com/landlab/landlab/wiki/Installing-Landlab-with-Anaconda">detailed instructions</a> for installing Landlab with Anaconda's Python distribution,
-     follow <a href="https://github.com/landlab/landlab/wiki/Installing-Landlab-with-Anaconda">this link</a>.
+     More detailed instructions for installing Landlab with Anaconda's Python distribution are available in the <a href="https://landlab.readthedocs.io/en/v2_dev/install/index.html">reference manual</a>.
    </p>
 
    <h3>
@@ -104,7 +118,7 @@
    <p>
      For users who have gotten a feel for Landlab and want to
      keep up with the absolute latest Landlab developments and contribute code back to the Landlab repository,
-     <a href="https://github.com/landlab/landlab/wiki/Installing-Landlab-from-source-code-(%22developer-install%22)">follow these directions</a>.
+     <a href="https://landlab.readthedocs.io/en/v2_dev/development/install/index.html">these directions</a> are available as part of the <a href="https://landlab.readthedocs.io/en/v2_dev/development/index.html">Landlab guide for developers</a>.
    </p>
   </div>
 </div>
@@ -115,14 +129,14 @@
 
     <p>
       As Landlab is still relatively early in its development
-      cycle, the code will update fairly often with frequent new releases.
+      cycle, the code will update fairly frequently with new releases.
       To take advantage of new features and new library
-      additions, we recommend you update Landlab regularly.
+      additions (as well as bug fixes, <i>ahem</i>), we recommend you update Landlab regularly.
     </p>
 
     <p>
       Whenever you update Landlab, we strongly recommend you <strong>also update your
-      Python package!</strong> For Anaconda, use the conda package manager from a command
+      Python package!</strong> For Anaconda, use the <code>conda</code> package manager from a command
       prompt.
       Assuming you have Landlab installed in a conda environment, be sure to activate the environment first.
       [Remember, on a PC, do all this in a Command Prompt window or through Anaconda; do not use Cygwin.]
