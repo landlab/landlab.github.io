@@ -15,6 +15,11 @@
     <p>
       Landlab is described in more detail by Hobley et al. in the 2017 paper <a target="_blank" href="http://www.earth-surf-dynam.net/5/21/2017/esurf-5-21-2017.html">Creative Computing with Landlab</a>.
     </p>
+    <p>
+      <i><strong>Landlab version 2</strong> is now in the works, with new features, better standardisation,
+      cleaner code, and enhanced capabilities! We anticipate release in early 2020, but in the
+      meantime you can check out (pun intended) the beta version.</i>
+    </p>
   </div>
 </div>
 <div class="background">
@@ -120,6 +125,22 @@
      keep up with the absolute latest Landlab developments and contribute code back to the Landlab repository,
      <a href="https://landlab.readthedocs.io/en/v2_dev/development/install/index.html">these directions</a> are available as part of the <a href="https://landlab.readthedocs.io/en/v2_dev/development/index.html">Landlab guide for developers</a>.
    </p>
+
+   <h3>
+     Landlab v.2 beta
+   </h3>
+   <p>
+     Landlab version 2 is coming! You can get a feel for it in our beta release.
+     Note that there are some (minor) code-breaking changes involved in this
+     changeover, and that you can always go back to v.1 though conda. We would
+     love some community feedback! Install the v.2 beta with:
+   </p>
+   <p>
+     <code>> conda install landlab -c conda-forge/label/dev</code>
+   </p>
+   <p>
+     You can see the v.2 code <a href="https://github.com/landlab/landlab/tree/v2_dev">here</a>.
+   </p>
   </div>
 </div>
 
@@ -147,7 +168,7 @@
       </code>
     </p>
     <p>
-      Once you've done this, simply update landlab, once again specifically from the <code>conda-forge</code> conda channel:
+      Once you've done this, simply update Landlab, once again specifically from the <code>conda-forge</code> conda channel:
     </p>
     <p>
       <code>
@@ -158,7 +179,7 @@
       Older Installations of Landlab
     </h3>
     <p>
-      We used to recommend installing landlab outside an environment, using either the <code>pip</code> package manager or through a conda channel called <code>-c landlab</code>. Notably, if you installed through the conda <code>landlab</code> channel rather than <code>conda-forge</code>, you won't be able to access updates any more. If you're now using Landlab inside its own environment, having these older versions around won't matter too much. However, to minimise confusion, you may wish to remove them. Simply do this:
+      We used to recommend installing Landlab outside an environment, using either the <code>pip</code> package manager or through a conda channel called <code>-c landlab</code>. Notably, if you installed through the conda <code>landlab</code> channel rather than <code>conda-forge</code>, you won't be able to access updates any more. If you're now using Landlab inside its own environment, having these older versions around won't matter too much. However, to minimise confusion, you may wish to remove them. Simply do this:
     </p>
     <p>
       <code>
@@ -178,6 +199,42 @@
     </p>
     <p>
       If you have <a href="https://github.com/landlab/landlab/wiki/Updating-Landlab" target="_blank">errors during install, click here</a> for guidance on how to resolve them.
+    </p>
+
+  </div>
+</div>
+
+<div class="background">
+  <div class="white">
+    <a name="update"></a><h2>Citing Landlab</h2>
+
+    <p>
+      Landlab is fully open source, so do with it whatever you want. However, if you're
+      doing published science with Landlab, you can credit the project in a few ways:
+      <li>Whenever you use Landlab, please cite <a href="https://doi.org/10.5194/esurf-5-21-2017">Hobley et al., 2017</a>,
+          which gives the theoretical and conceptual underpinnings for the project.</li>
+      <li>Some of our components are published in their own right. In these cases please
+          also cite the key publication for each component you use, so the individual
+          authors can get credit for their work (and who may not otherwise be affiliated
+          with the core Landlab project). In these cases, the
+          <a href="https://landlab.readthedocs.io/en/v2_dev/reference/components/index.html">documentation
+          for each component</a> will make those citations clear.</li>
+      <li>In the interests of sustainable and reproducible science, please also
+          be sure to describe the specific version of Landlab that your work is based on.
+          All our binary releases have version numbers. See them with <code>conda list landlab</code>
+          at your command prompt for a binary install, or import Landlab in Python and look at
+          <code>landlab.__version__</code> in the general case.
+          The master version of the landlab code base also has an ever-evolving
+          doi (see the readme on the
+          <a href="https://github.com/landlab/landlab">Github page</a>).</li>
+      <li>If you have made substantial additions to Landlab in the course of doing
+          your science and you want to share them, we would advocate creating a
+          brand-new Landlab release and citing that. Raise an issue on the
+          Github site and someone will help you.</li>
+    </p>
+    <p>
+        These key publications may change with the forthcoming release of Landlab v.2,
+        so please check back here before finally submitting your manuscript!
     </p>
 
   </div>
